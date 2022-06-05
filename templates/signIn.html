@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+    <br>
+        <h1>Authorization</h1>
+
+        <form method="post" style="width:50%; margin-left:20px;">
+            <input type="text" name="username" class="form-control mb-3 mt-3" placeholder="username">
+            <input type="password" name="password" class="form-control" placeholder="password">
+            <button type="submit" class="btn btn-success mt-3">Sign In</button>
+        </form>
+    </div>
+{% endblock %}

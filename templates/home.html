@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <br>
+        <ul>
+            {% for names,sprites in pokemon.items() %}
+                <li style="display:inline-block">
+                    <div class="pokemon">
+                        <h5>{{ names.capitalize() }}</h5>
+                        <img src={{ sprites }}>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
